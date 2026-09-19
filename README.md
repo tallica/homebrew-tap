@@ -11,7 +11,9 @@ brew install tallica/tap/<formula>
 
 ## Formulae
 
-_None yet._
+| Formula | Description |
+| --- | --- |
+| [`incus-compose`](Formula/incus-compose.rb) | Drop-in replacement for docker compose that runs your compose.yaml on Incus |
 
 ## Adding a formula
 
