@@ -11,3 +11,4 @@ Entries are grouped by date rather than release version, since this tap is not v
 
 - Basic tap structure: `README.md`, `LICENSE` (MIT), and CI workflow using `brew test-bot`.
 - `incus-compose` formula.
+- `lazyincus` formula (builds from source; no release binaries yet).
