@@ -20,3 +20,7 @@ Entries are grouped by date rather than release version, since this tap is not v
   redundant with the version scanned from the URL. Added `depends_on :macos` with Linux-side URL
   stanzas (unused at install time, only present so readall can parse the formula) and dropped the
   explicit `version`.
+- `lazyincus`: `--HEAD` builds reported a stale version (e.g. `v0.6.1-22-gfd5f7d8` for a commit
+  actually tagged `v0.7.0`) because Homebrew's HEAD git checkout fetches with `tagOpt=--no-tags`,
+  so the Makefile's `git describe --tags` couldn't see release tags. `install` now runs
+  `git fetch --tags origin` before building on HEAD.

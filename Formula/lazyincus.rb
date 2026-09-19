@@ -12,7 +12,14 @@ class Lazyincus < Formula
     # The Makefile's own `git describe` versioning only works with a real
     # .git checkout (HEAD builds); tarball installs have no VCS metadata,
     # so pin VERSION explicitly to the formula's release version for those.
-    args = build.head? ? [] : ["VERSION=#{version}"]
+    if build.head?
+      # Homebrew's HEAD checkout fetches with tagOpt=--no-tags, so `git
+      # describe` can't see release tags unless we fetch them ourselves.
+      system "git", "fetch", "--tags", "origin"
+      args = []
+    else
+      args = ["VERSION=#{version}"]
+    end
     system "make", "build", *args
     bin.install "lazyincus"
   end
