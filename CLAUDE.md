@@ -14,7 +14,7 @@ code here.
   isn't versioned software). Add an entry under today's date for any
   formula addition/update.
 - `.github/workflows/tests.yml` — CI runs `brew test-bot` (cleanup,
-  setup, tap-syntax, formulae) on `macos-latest` for pushes to `main`
+  setup, tap-syntax, formulae) on `macos-latest` for pushes to `master`
   and PRs.
 
 ## Adding or updating a formula
