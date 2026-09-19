@@ -12,3 +12,11 @@ Entries are grouped by date rather than release version, since this tap is not v
 - Basic tap structure: `README.md`, `LICENSE` (MIT), and CI workflow using `brew test-bot`.
 - `incus-compose` formula.
 - `lazyincus` formula (builds from source; no release binaries yet).
+
+### Fixed
+
+- `incus-compose`: fix `brew test-bot --only-tap-syntax` failures — `readall --os=all --arch=all`
+  errored because no URL was defined for Linux, and `audit` flagged the explicit `version` as
+  redundant with the version scanned from the URL. Added `depends_on :macos` with Linux-side URL
+  stanzas (unused at install time, only present so readall can parse the formula) and dropped the
+  explicit `version`.
