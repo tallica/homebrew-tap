@@ -1,26 +1,40 @@
 class Lazyincus < Formula
   desc "Terminal UI for Incus, in the style of lazydocker"
   homepage "https://github.com/tallica/lazyincus"
-  url "https://github.com/tallica/lazyincus/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "85305c5b02cd8c7df4804151f8670003569ce4a41b01d851973854c0bc4bd768"
   license "MIT"
   head "https://github.com/tallica/lazyincus.git", branch: "master"
 
   depends_on "go" => :build
 
+  on_macos do
+    on_arm do
+      url "https://github.com/tallica/lazyincus/releases/download/v0.8.1/lazyincus_0.8.1_darwin_arm64.tar.gz"
+      sha256 "415458fddbc37e403c6411011e260f4517f20dcae490466b883469df4b85e2d8"
+    end
+    on_intel do
+      url "https://github.com/tallica/lazyincus/releases/download/v0.8.1/lazyincus_0.8.1_darwin_amd64.tar.gz"
+      sha256 "87fce36420202ad7300e2a052bbe6b2399e26e38a791ec22b5a6ffb29f0a0d71"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/tallica/lazyincus/releases/download/v0.8.1/lazyincus_0.8.1_linux_arm64.tar.gz"
+      sha256 "bd9b09c4df525eb442f2c56716fd9347eedd319752e1d560c483966203e4c653"
+    end
+    on_intel do
+      url "https://github.com/tallica/lazyincus/releases/download/v0.8.1/lazyincus_0.8.1_linux_amd64.tar.gz"
+      sha256 "6a1f9a5a37e8a017a29d8e109a465e2d7f864ed5b30ab494abc4f23faa3c9f51"
+    end
+  end
+
   def install
-    # The Makefile's own `git describe` versioning only works with a real
-    # .git checkout (HEAD builds); tarball installs have no VCS metadata,
-    # so pin VERSION explicitly to the formula's release version for those.
     if build.head?
       # Homebrew's HEAD checkout fetches with tagOpt=--no-tags, so `git
       # describe` can't see release tags unless we fetch them ourselves.
       system "git", "fetch", "--tags", "origin"
-      args = []
-    else
-      args = ["VERSION=#{version}"]
+      system "make", "build"
     end
-    system "make", "build", *args
     bin.install "lazyincus"
   end
 
