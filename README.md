@@ -6,8 +6,12 @@ Personal Homebrew tap.
 
 ```
 brew tap tallica/tap
+brew trust --tap tallica/tap
 brew install tallica/tap/<formula>
 ```
+
+`brew trust` is required because this is a non-official tap — without it,
+Homebrew will refuse to load its formulae.
 
 ## Formulae
 
