@@ -5,6 +5,13 @@ All notable changes to this tap will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Entries are grouped by date rather than release version, since this tap is not versioned software.
 
+## [2026-09-22]
+
+### Added
+
+- `pomodoro` cask: new Pomodoro timer app, installed from prebuilt macOS release binary
+  (`v0.1.0`). Also added `Casks/` support to CI (`--only-cask-syntax`, `--only-casks`).
+
 ## [2026-09-20]
 
 ### Changed

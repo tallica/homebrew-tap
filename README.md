@@ -20,6 +20,12 @@ Homebrew will refuse to load its formulae.
 | [`incus-compose`](Formula/incus-compose.rb) | Drop-in replacement for docker compose that runs your compose.yaml on Incus |
 | [`lazyincus`](Formula/lazyincus.rb) | Terminal UI for Incus, in the style of lazydocker |
 
+## Casks
+
+| Cask | Description |
+| --- | --- |
+| [`pomodoro`](Casks/pomodoro.rb) | Menu bar timer for the Pomodoro technique |
+
 ## Adding a formula
 
 ```
