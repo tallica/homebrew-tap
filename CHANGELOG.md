@@ -10,7 +10,8 @@ Entries are grouped by date rather than release version, since this tap is not v
 ### Added
 
 - `pomodoro` cask: new Pomodoro timer app, installed from prebuilt macOS release binary
-  (`v0.1.0`). Also added `Casks/` support to CI (`--only-cask-syntax`, `--only-casks`).
+  (`v0.1.0`). `--only-tap-syntax` in CI already covers Casks (`brew style`/`readall`/`audit`
+  run tap-wide), so no CI changes were needed.
 
 ## [2026-09-20]
 
