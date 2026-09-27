@@ -1,6 +1,6 @@
 cask "pomodoro" do
-  version "0.3.1"
-  sha256 "2f2b190cc7c9f70f21563fa101568e19f7cdec1402c986864cc45fee8ed3610b"
+  version "0.3.2"
+  sha256 "a49aaf9105968873c03c622308e55aeb0040917e81ca88ab462529d1fa375300"
 
   url "https://github.com/tallica/pomodoro/releases/download/v#{version}/Pomodoro-v#{version}-macos.zip"
   name "Pomodoro"
