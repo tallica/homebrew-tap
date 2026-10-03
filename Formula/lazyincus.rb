@@ -8,23 +8,23 @@ class Lazyincus < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/tallica/lazyincus/releases/download/v0.13.0/lazyincus_0.13.0_darwin_arm64.tar.gz"
-      sha256 "8e000d3ebe6059060761fc4a51461b381326ab004c209afd1870c46f5d6e8352"
+      url "https://github.com/tallica/lazyincus/releases/download/v0.13.1/lazyincus_0.13.1_darwin_arm64.tar.gz"
+      sha256 "e2d67a8754dde108d4c26bc8636a27bb086f24ee0dbe508ec89882b31dbb898e"
     end
     on_intel do
-      url "https://github.com/tallica/lazyincus/releases/download/v0.13.0/lazyincus_0.13.0_darwin_amd64.tar.gz"
-      sha256 "fedb559df30b57ec9d592c491a8cf412940b8f42a98499fce7fbdf80b089a5ab"
+      url "https://github.com/tallica/lazyincus/releases/download/v0.13.1/lazyincus_0.13.1_darwin_amd64.tar.gz"
+      sha256 "349d6da72f09e9b587183869e7c672ca799b1ec37af99eb2e9ffa38131782b27"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tallica/lazyincus/releases/download/v0.13.0/lazyincus_0.13.0_linux_arm64.tar.gz"
-      sha256 "78c3c468baefd5c862980218bf700a1ffe25739d67460f8b7bf0166ffdade93b"
+      url "https://github.com/tallica/lazyincus/releases/download/v0.13.1/lazyincus_0.13.1_linux_arm64.tar.gz"
+      sha256 "7ba38a9fbed0c34a62427301607b45440fbc1bfee360ae27a351aabf5cb5ce5c"
     end
     on_intel do
-      url "https://github.com/tallica/lazyincus/releases/download/v0.13.0/lazyincus_0.13.0_linux_amd64.tar.gz"
-      sha256 "2cc6bff80f4b418bf6d6059f6bcbd511208271500e2b22deb12bdea99605bf5d"
+      url "https://github.com/tallica/lazyincus/releases/download/v0.13.1/lazyincus_0.13.1_linux_amd64.tar.gz"
+      sha256 "c82023235a106eba8f2df5b042fa69f15d88f12638345172b51b26be2b5f7a78"
     end
   end
 
