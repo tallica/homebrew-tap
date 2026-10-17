@@ -10,6 +10,7 @@ Entries are grouped by date rather than release version, since this tap is not v
 ### Changed
 
 - `lazyincus`: bumped to `v0.16.0`.
+- `pomodoro` cask: bumped to `v0.3.3`.
 
 ## [2026-10-10]
 
