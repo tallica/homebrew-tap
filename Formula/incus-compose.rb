@@ -5,23 +5,23 @@ class IncusCompose < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lxc/incus-compose/releases/download/v1.3.4/incus-compose_1.3.4_darwin_arm64.tar.gz"
-      sha256 "ba2f521dda21a1294185bd17606d1fdf190e74f45c62b59e53affee82a4321e6"
+      url "https://github.com/lxc/incus-compose/releases/download/v1.3.5/incus-compose_1.3.5_darwin_arm64.tar.gz"
+      sha256 "906f0ce3449d35c3bfac210a018455d0dd9af0e450ac03395c622dbf5b386c54"
     end
     on_intel do
-      url "https://github.com/lxc/incus-compose/releases/download/v1.3.4/incus-compose_1.3.4_darwin_amd64.tar.gz"
-      sha256 "4ef5af54c0e4fcff6ebc3d6e02ef0864b91b7581297269cbcab30cad750bcebf"
+      url "https://github.com/lxc/incus-compose/releases/download/v1.3.5/incus-compose_1.3.5_darwin_amd64.tar.gz"
+      sha256 "c2a9b2263188cfcb7fb90e6341ba3a806846f3d0e3309b46a17e22bf9b15728f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lxc/incus-compose/releases/download/v1.3.4/incus-compose_1.3.4_linux_arm64.tar.gz"
-      sha256 "a6a83ed7e39b5b92f387ae1a6540bb3b073ab2a1896055222f55d2a84251e9f1"
+      url "https://github.com/lxc/incus-compose/releases/download/v1.3.5/incus-compose_1.3.5_linux_arm64.tar.gz"
+      sha256 "39e460804affe076f46df34c4434ee53cac167f9b836a15b5b52d7f8d6aede71"
     end
     on_intel do
-      url "https://github.com/lxc/incus-compose/releases/download/v1.3.4/incus-compose_1.3.4_linux_amd64.tar.gz"
-      sha256 "60fcbf2aaacba430293bca5a41e81df0ec0697abaac4b462cff711ce6df53e9a"
+      url "https://github.com/lxc/incus-compose/releases/download/v1.3.5/incus-compose_1.3.5_linux_amd64.tar.gz"
+      sha256 "0ed925b152ec5cea08b72f2f2ffbaa167619103a9aefb2582285920d5931facb"
     end
   end
 
