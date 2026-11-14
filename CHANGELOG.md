@@ -9,7 +9,7 @@ Entries are grouped by date rather than release version, since this tap is not v
 
 ### Changed
 
-- `lazyincus`: bumped to `v0.17.0`.
+- `lazyincus`: bumped to `v0.17.0`, then `v0.17.1`.
 
 ## [2026-11-11]
 
